@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="eQNyjFtK4rBq_GJu2rbYx1Nw_R8n8FrJQ5iWalARP44" />
+    <link rel="stylesheet" href="/css/css.css">
+    <link rel="stylesheet" href="/css/show.css">
+    <link rel="stylesheet" href="/css/show2.css">
+    <link rel="stylesheet" href="/icon/themify-icons/themify-icons.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <!-- header-->
+        <div id="header">
+                <ul id="nav">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Thông Tin</a>
+                        <ul class="sub_thongtin">
+                            <li><a href="">Chung</a></li>
+                            <li><a href="">Hoàng</a></li>
+                            <li><a href="">Nga</a></li>
+                        </ul></li>
+                    <li><a href="">Sản Phẩm</a>
+                        <ul class="sub_thongtin">
+                            <li><a href="">Web</a></li>
+                            <li><a href="">App</a></li>
+                            <li><a href="">Game</a></li>
+                        </ul></li></li>
+                </ul>
+            <div id="langu">
+                <img class="co" src="/css/picture/covn.jpg" alt="">
+                <img class="co" src="/css/picture/la-co-vuong-quoc-anh.jpg" alt="">
+            </div>
+        </div>
+
+
+        <!-- slider -->
+        <div id="slider">
+            <img id="image-slider" name="myimage" src="/css/picture/anh1.jpg" />
+        </div>
+        <div id="content">
+            <div id="member">
+                <div class="list">
+                
+                    <img class="anh" src="/css/picture/images.jpg" alt="">
+                    <p class="p1">Phan Doãn Hoàng</p>
+                    <p class="p2">Unity developer</p>
+                </div>
+    
+                <div class="list">
+                    
+                    <img class="anh" src="/css/picture/images.jpg" alt="">
+                    <p class="p1">Phan Doãn Hoàng</p>
+                    <p class="p2">Unity developer</p>
+                </div>
+            </div>
+
+            <div id="product">
+                <div id="pd_content">
+                    <h1>Sản phẩm tiêu biểu</h1>
+                </div>
+                <div id="pd_list">
+                    <div class="pd">
+                        <h2> Trang web dạy IT</h2>
+                        <div class="show-hide-text">
+                            <div id="bong"></div>
+                            <a  id="show-more" class="show-less" href="#show-less"><button class="button_show">Show less<div class="ti-arrow"><i class="ti-arrow-up"></i></div></button></a>
+                            <a  id="show-less" class="show-more" href="#show-more"><button class="button_show">Show more<div class="ti-arrow"><i class="ti-arrow-down"></i></div></button></a>
+                            <p>
+                              Lorem Ipsum is simply dummy text of  the printing and typesetting industry...Lorem Ipsum is simply dummy text of  the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                              <img src="/css/picture/Ảnh chụp màn hình 2023-10-06 184637.png" alt=""> PageMaker including versions of Lorem Ipsum.
+                            </p>
+                          </div>
+                       
+                    </div>
+                    <div class="pd">
+                        <h2> Trang web dạy IT</h2>
+                        <div class="show-hide-text2">
+                            <div id="bong2"></div>
+                            <a  id="show-more2" class="show-less2" href="#show-less2"><button class="button_show2">Show less<div class="ti-arrow"><i class="ti-arrow-up"></i></div></button></a>
+                            <a  id="show-less2" class="show-more2" href="#show-more2"><button class="button_show2">Show more<div class="ti-arrow"><i class="ti-arrow-down"></i></div></button></a>
+                            <p>
+                              Lorem Ipsum is simply dummy text of  the printing and typesetting industry...Lorem Ipsum is simply dummy text of  the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                              <img src="/css/picture/Ảnh chụp màn hình 2023-10-06 184637.png" alt=""> PageMaker including versions of Lorem Ipsum.
+                            </p>
+                          </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    
+</body>
+<!-- chạy hình ảnh -->
+<script type="text/javascript">
+    window.onload = function(){
+      setTimeout("switchImage()", 3000);
+    }
+    var current = 1;
+    var numIMG = 4;
+    function switchImage(){
+      current++;
+      document.images['myimage'].src ='/css/picture/anh' + current + '.jpg';
+      if(current == numIMG){current =0;}
+    setTimeout("switchImage()", 3000);
+    }
+    </script>
+
+
+<!-- bóng show more-->
+    <script>
+        document.getElementById("show-less").addEventListener("click", function() {
+    var elementsToHide = document.getElementById("bong");
+        elementsToHide.style.display = "none";
+});
+        </script>
+        <script>
+            document.getElementById("show-more").addEventListener("click", function() {
+        var elementsToHide = document.getElementById("bong");
+            elementsToHide.style.display = "block";
+    });
+            </script>
+    
+    <script>
+        document.getElementById("show-less2").addEventListener("click", function() {
+    var elementsToHide = document.getElementById("bong2");
+        elementsToHide.style.display = "none";
+});
+        </script>
+        <script>
+            document.getElementById("show-more2").addEventListener("click", function() {
+        var elementsToHide = document.getElementById("bong2");
+            elementsToHide.style.display = "block";
+    });
+            </script>
+</html>
