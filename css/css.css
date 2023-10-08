@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Verdana,sans-serif;
+    scroll-behavior: smooth;
+    color: rgba(31, 36, 34, 0.5);
+    /* background-color:rgba(31, 36, 34, 0.5) ; */
+}
+#main{
+    position: relative;
+}
+#header{
+    background-color: black;
+
+    width: 100%;
+    font-size: 20px;
+    position: fixed;
+    margin-top: -50px;
+    z-index: 2;
+    height: 54.55px;
+
+}
+#nav{
+    list-style-type: none;
+    display: inline-block;
+    position: absolute;
+    
+}
+#langu{
+    display: inline-block;
+    height: 100%;
+    float: right; 
+    margin-top: 15px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+.co{
+    width: 30px;
+    height: 20px;
+    margin-right: 5px;
+
+}
+#nav>li{
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    border-radius: 8px;
+}
+#nav>li>a{
+    color: white;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+#nav .sub_thongtin{
+    display: none;
+    background-color: black;
+    list-style-type: none;
+    width: 160px;
+    position: absolute;
+    border-radius: 10px;
+}
+#nav .sub_thongtin li {
+    padding: 8px 20px 8px 0px;
+    border-radius: 5px;
+}
+#nav .sub_thongtin li a{
+    color:  white;
+    text-decoration: none;
+    padding-left: 10px;
+}
+#nav li:hover .sub_thongtin{
+    display: block;
+}
+#nav li:hover {
+    background-color: rgb(61, 51, 51);
+}
+#logo{
+    width: 54.55px;
+    height: 54.55px;
+    display: inline-block;
+}
+#img-logo{
+    width: 54.55px;
+    height: 54.55px;
+    border-radius: 8px;
+}
+#ti-menu{
+    display: none;
+    background-color: rgb(61, 51, 51);
+    position: absolute;
+    height: 54.55px;
+    width: 54.55px;
+    border-radius: 8px;
+}
+.ti-menu{
+    color: white;
+    font-size: 30px;
+    ;position: absolute;
+    top :17%;
+    left: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#slider{
+    margin-top:46px;
+    position:relative;
+    max-height: 600px;
+    width: 100%;
+    overflow: hidden;
+    
+}
+#image-slider{
+    width: 100%;
+}
+
+#tex-slider{
+    text-align: center;
+    padding-top: 70px;
+    color: rgb(30, 58, 48);
+    
+}
+#member{
+    color: black;
+    background-image: linear-gradient(180,rgba(58, 204, 143,0.5),rgb(61, 135, 221,0.5));
+}
+
+#content{
+    margin: 30px 100px;
+
+}
+.list{
+    width: 49%;
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(176, 174, 201);
+    border-radius: 20px;
+}
+.anh{
+    padding-top: 30px;
+    display: block;
+    margin: auto;
+    max-width: 30%;
+    border-radius: 40px;
+}
+#product{
+    padding-top: 50px;
+    
+}
+#pd_content{
+    text-align: center;
+}
+.pd{
+    padding-top: 80px;
+  }
+
+
+
+.setrong{
+    width: 100%;
+}
+
+
+
+
+
+/* menu mini  */
+#mini-menu{
+    position: fixed;
+    background-color: rgba(109, 100, 100,0);
+    width: 125px;
+    height: 125px;
+    top:50px;
+    left: 0;
+    border-radius: 15px;
+    display: none;
+ 
+}
+#nav-mini>li{
+    display: block;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-radius: 10px;
+    background-color: rgba(109, 100, 100,0.8);
+}
+#nav-mini>li>a{
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: white;
+}
+#nav-mini>li>p{
+    padding: 10px;
+    display: block;
+    color: white;
+}
+#nav-mini>li:hover {
+    background-color: rgba(109, 100, 100,0.5);
+    cursor: pointer;
+}
+.sub_thongtin-m>li:hover{
+    background-color: rgba(109, 100, 100,0.5);
+    cursor: pointer;
+}
+.sub_thongtin-m{
+    position: fixed;
+    list-style-type: none;
+}
+.sub_thongtin-m a{
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: white;
+}
+.sub_thongtin-m li{
+    display: block;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-radius: 10px;
+    background-color: rgba(109, 100, 100,0.8);
+}
+#sub_thongtin-m1{
+    width: 125px;
+    height: 123px;
+    display: block;
+    top: 92px;
+    left: 125px;
+    display: none;
+}
+#sub_thongtin-m2{
+    width: 125px;
+    height: 123px;
+    display: block;
+    top: 135px;
+    left: 125px;
+    display: none;
+}

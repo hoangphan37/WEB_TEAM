@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="eQNyjFtK4rBq_GJu2rbYx1Nw_R8n8FrJQ5iWalARP44" />
-    <link rel="stylesheet" href="css.css">
-    <link rel="stylesheet" href="show.css">
-    <link rel="stylesheet" href="show2.css">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/show.css">
+    <link rel="stylesheet" href="css/show2.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="icon/themify-icons/themify-icons.css">
     <title>Document</title>
 </head>
@@ -14,21 +15,25 @@
     <div id="main">
         <!-- header-->
         <div id="header">
-                <ul id="nav">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Thông Tin</a>
-                        <ul class="sub_thongtin">
-                            <li><a href="">Chung</a></li>
-                            <li><a href="">Hoàng</a></li>
-                            <li><a href="">Nga</a></li>
-                        </ul></li>
-                    <li><a href="">Sản Phẩm</a>
-                        <ul class="sub_thongtin">
-                            <li><a href="https://hoangphan37.github.io/WebLearn/">Web</a></li>
-                            <li><a href="">App</a></li>
-                            <li><a href="">Game</a></li>
-                        </ul></li></li>
-                </ul>
+            <div id="logo">
+                <a href=""><img id="img-logo" src="css/picture/covn.jpg" alt=""></a>
+            </div>
+            <div id="ti-menu"><i class="ti-menu"></i></div>
+            <ul id="nav">
+                <li><a href="">Home</a></li>
+                <li><a href="">Thông Tin</a>
+                    <ul class="sub_thongtin">
+                        <li><a href="">Chung</a></li>
+                        <li><a href="">Hoàng</a></li>
+                        <li><a href="">Nga</a></li>
+                    </ul></li>
+                <li><a href="">Sản Phẩm</a>
+                    <ul class="sub_thongtin">
+                        <li><a href="https://hoangphan37.github.io/WebLearn/">Web</a></li>
+                        <li><a href="">App</a></li>
+                        <li><a href="">Game</a></li>
+                    </ul></li></li>
+            </ul>
             <div id="langu">
                 <img class="co" src="css/picture/covn.jpg" alt="">
                 <img class="co" src="css/picture/la-co-vuong-quoc-anh.jpg" alt="">
@@ -38,22 +43,28 @@
 
         <!-- slider -->
         <div id="slider">
-            <img id="image-slider" name="myimage" src="css/picture/anh1.jpg" />
+            <img id="image-slider" name="myimage" src="css/picture/nhom1.jpg" />
         </div>
+
+
         <div id="content">
+            
+        <div id="tex-slider">
+            <h1>PROVITER TEAM</h1>
+        </div>
             <div id="member">
                 <div class="list">
                 
-                    <img class="anh" src="css/picture/images.jpg" alt="">
-                    <p class="p1">Phan Doãn Hoàng</p>
-                    <p class="p2">Unity developer</p>
+                    <img class="anh" src="css/picture/hoang.jpg" alt="">
+                    <h4  style="padding: 10px 0px;" class="setrong" class="p1">Hoàng Phan</h4>
+                    <p style="padding-bottom: 10px;" class="setrong" class="p2">Unity Developer</p>
                 </div>
     
                 <div class="list">
                     
-                    <img class="anh" src="css/picture/images.jpg" alt="">
-                    <p class="p1">Phan Doãn Hoàng</p>
-                    <p class="p2">Unity developer</p>
+                    <img class="anh" src="css/picture/nga.jpg" alt="">
+                    <h4 style="padding: 10px 0px;"  class="setrong" class="p1">Đàm Nga</h4>
+                    <p style="padding-bottom: 10px;" class="setrong" class="p2">Mobile Developer</p>
                 </div>
             </div>
 
@@ -92,6 +103,29 @@
             </div>
         </div>
 
+
+
+
+
+        <!-- menu thu nho -->
+
+        <div id="mini-menu">
+            <ul id="nav-mini">
+                <li><a href="">Home</a></li>
+                <li id="mini-li1"><p>Thông Tin</p>
+                    <ul class="sub_thongtin-m" id="sub_thongtin-m1">
+                        <li><a href="">Chung</a></li>
+                        <li><a href="">Hoàng</a></li>
+                        <li><a href="">Nga</a></li>
+                    </ul></li>
+                <li id="mini-li2"><p>Sản Phẩm</p>
+                    <ul class="sub_thongtin-m" id="sub_thongtin-m2">
+                        <li><a href="https://hoangphan37.github.io/WebLearn/">Web</a></li>
+                        <li><a href="">App</a></li>
+                        <li><a href="">Game</a></li>
+                    </ul></li></li>
+            </ul>
+        </div>
     </div>
 
 
@@ -107,7 +141,7 @@
     var numIMG = 4;
     function switchImage(){
       current++;
-      document.images['myimage'].src ='css/picture/anh' + current + '.jpg';
+      document.images['myimage'].src ='css/picture/nhom' + current + '.jpg';
       if(current == numIMG){current =0;}
     setTimeout("switchImage()", 3000);
     }
@@ -117,27 +151,81 @@
 <!-- bóng show more-->
     <script>
         document.getElementById("show-less").addEventListener("click", function() {
-    var elementsToHide = document.getElementById("bong");
-        elementsToHide.style.display = "none";
+    var x = document.getElementById("bong");
+        x.style.display = "none";
 });
         </script>
         <script>
             document.getElementById("show-more").addEventListener("click", function() {
-        var elementsToHide = document.getElementById("bong");
-            elementsToHide.style.display = "block";
+        var x = document.getElementById("bong");
+            x.style.display = "block";
     });
             </script>
     
     <script>
         document.getElementById("show-less2").addEventListener("click", function() {
-    var elementsToHide = document.getElementById("bong2");
-        elementsToHide.style.display = "none";
+    var x = document.getElementById("bong2");
+        x.style.display = "none";
 });
         </script>
         <script>
             document.getElementById("show-more2").addEventListener("click", function() {
-        var elementsToHide = document.getElementById("bong2");
-            elementsToHide.style.display = "block";
+        var x = document.getElementById("bong2");
+            x.style.display = "block";
+            
     });
             </script>
+
+<!-- click mini menu -->
+
+<script>
+    document.getElementById("ti-menu").addEventListener("click", function() {
+    var x = document.getElementById("mini-menu");
+    if(x.style.display == "none"){
+        x.style.display = "block";
+    }else{
+        x.style.display = "none";
+    }
+
+});
+document.getElementById("mini-li1").addEventListener("click", function() {
+    var x = document.getElementById("sub_thongtin-m1");
+    var y = document.getElementById("sub_thongtin-m2");
+    if(x.style.display == "none"){
+        y.style.display = "none";
+        x.style.display = "block";
+    }else{
+        x.style.display = "none";
+    }
+
+}); document.getElementById("mini-li2").addEventListener("click", function() {
+    var x = document.getElementById("sub_thongtin-m2");
+    var y = document.getElementById("sub_thongtin-m1");
+    if(x.style.display == "none"){
+        x.style.display = "block";
+        y.style.display = "none";
+    }else{
+        x.style.display = "none";
+    }
+
+});
+document.getElementById("slider").addEventListener("click", function() {
+    var x = document.getElementById("mini-menu");
+    var y = document.getElementById("sub_thongtin-m1");
+    var z = document.getElementById("sub_thongtin-m2");
+        x.style.display = "none";
+        y.style.display = "none";
+        z.style.display = "none";
+
+});
+document.getElementById("content").addEventListener("click", function() {
+    var x = document.getElementById("mini-menu");
+    var y = document.getElementById("sub_thongtin-m1");
+    var z = document.getElementById("sub_thongtin-m2");
+        x.style.display = "none";
+        y.style.display = "none";
+        z.style.display = "none";
+
+});
+    </script>
 </html>

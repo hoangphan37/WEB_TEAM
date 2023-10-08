@@ -1,0 +1,14 @@
+@media (max-width: 800px) {
+    #nav{
+        display: none;
+    }
+    #ti-menu{
+        display: inline-block;
+    }
+    .list{
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        width: 80%;
+    }
+}
