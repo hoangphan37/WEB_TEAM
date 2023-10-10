@@ -20,23 +20,23 @@
             </div>
             <div id="ti-menu"><i class="ti-menu"></i></div>
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Thông Tin</a>
+                <li><a class="check" href="">Home</a></li>
+                <li><p >Thông Tin</p>
                     <ul class="sub_thongtin">
-                        <li><a href="">Chung</a></li>
-                        <li><a href="">Hoàng</a></li>
-                        <li><a href="">Nga</a></li>
+                        <li><a class="check">Chung</a></li>
+                        <li id="buttonhoang"><a>Hoàng</a></li>
+                        <li id="buttonnga"><a>Nga</a></li>
                     </ul></li>
-                <li><a href="">Sản Phẩm</a>
+                <li><p>Sản Phẩm</p>
                     <ul class="sub_thongtin">
                         <li><a href="https://hoangphan37.github.io/WebLearn/">Web</a></li>
-                        <li><a href="">App</a></li>
-                        <li><a href="">Game</a></li>
+                        <li><a class="check">App</a></li>
+                        <li><a class="check">Game</a></li>
                     </ul></li></li>
             </ul>
             <div id="langu">
                 <img class="co" src="css/picture/covn.jpg" alt="">
-                <img class="co" src="css/picture/la-co-vuong-quoc-anh.jpg" alt="">
+                <img class="co check" src="css/picture/la-co-vuong-quoc-anh.jpg" alt="">
             </div>
         </div>
 
@@ -55,14 +55,14 @@
             <div id="member">
                 <div class="list">
                 
-                    <img class="anh" src="css/picture/hoang.jpg" alt="">
+                    <div class="divanh"><img id="anhoang" class="anh" src="css/picture/hoang.jpg" alt=""></div>
                     <h4  style="padding: 10px 0px;" class="setrong" class="p1">Hoàng Phan</h4>
                     <p style="padding-bottom: 10px;" class="setrong" class="p2">Unity Developer</p>
                 </div>
     
                 <div class="list">
                     
-                    <img class="anh" src="css/picture/nga.jpg" alt="">
+                    <div class="divanh"><img id="anhnga" class="anh" src="css/picture/nga.jpg" alt=""></div>
                     <h4 style="padding: 10px 0px;"  class="setrong" class="p1">Đàm Nga</h4>
                     <p style="padding-bottom: 10px;" class="setrong" class="p2">Mobile Developer</p>
                 </div>
@@ -102,7 +102,18 @@
                 </div>
             </div>
         </div>
+        <div id="futer">
+            <p>Trang web được viết bởi 1 nhóm học sinh trường Cao đẳng Nghề Bách Khoa Hà Nội</p>
+            <p>Mọi chi tiết vui lòng liên hệ gmail: hoangblytna@gmail.com</p>
+            <div id="icons">
 
+                <div class="iconapp check"><img class="icon" src="css/picture/ICON/basic-rgb-185522527.jpg" alt=""><a href=""></a></div>
+                <div class="iconapp check"><img class="icon" src="css/picture/ICON/basic-rgb-18552252r7.jpg" alt=""><a href=""></a></div>
+                <div class="iconapp check"><img class="icon" src="css/picture/ICON/basic-rgb-1855h22527.jpg" alt=""><a href=""></a></div>
+                <div class="iconapp check"><img class="icon" src="css/picture/ICON/basic-rgb-r.jpg" alt=""><a href=""></a></div>
+                <div class="iconapp check"><img class="icon" src="css/picture/ICON/basic-rgb-rr.jpg" alt=""><a href=""></a></div>
+            </div>
+        </div> 
 
 
 
@@ -114,8 +125,8 @@
                 <li><a href="">Home</a></li>
                 <li id="mini-li1"><p>Thông Tin</p>
                     <ul class="sub_thongtin-m" id="sub_thongtin-m1">
-                        <li><a href="">Chung</a></li>
-                        <li><a href="">Hoàng</a></li>
+                        <li><a class="check">Chung</a></li>
+                        <li><a href="#">Hoàng</a></li>
                         <li><a href="">Nga</a></li>
                     </ul></li>
                 <li id="mini-li2"><p>Sản Phẩm</p>
@@ -126,6 +137,20 @@
                     </ul></li></li>
             </ul>
         </div>
+
+
+        <!-- mo backgroud -->
+        <div id="black_bg" style="background-color: rgba(1,1,1,0.7); width: 100%; height: 100%; position:absolute; z-index: 1;top:0px"></div>
+
+        <!-- bang cv hoang -->
+        <div class="cv" id="cvhoang">
+            <img src="css/picture/theme_31.png" alt="">
+        </div>
+        <!-- bang cv nga -->
+        <div class="cv" id="cvnga">
+            <img src="css/picture/theme_31.png" alt="">
+        </div>
+
     </div>
 
 
@@ -209,10 +234,13 @@ document.getElementById("mini-li1").addEventListener("click", function() {
     }
 
 });
+
+// an khi bam ngoai man hinh 
 document.getElementById("slider").addEventListener("click", function() {
     var x = document.getElementById("mini-menu");
     var y = document.getElementById("sub_thongtin-m1");
     var z = document.getElementById("sub_thongtin-m2");
+
         x.style.display = "none";
         y.style.display = "none";
         z.style.display = "none";
@@ -222,10 +250,78 @@ document.getElementById("content").addEventListener("click", function() {
     var x = document.getElementById("mini-menu");
     var y = document.getElementById("sub_thongtin-m1");
     var z = document.getElementById("sub_thongtin-m2");
+
         x.style.display = "none";
         y.style.display = "none";
         z.style.display = "none";
 
+
 });
+    </script>
+
+<!-- hien cv  -->
+<script>
+    document.getElementById("buttonhoang").addEventListener("click", function() {
+var x = document.getElementById("cvhoang");
+var y = document.getElementById("black_bg");
+    x.style.display = "block";
+    y.style.display = "block";
+    
+});
+    </script>
+    <script>
+    document.getElementById("anhoang").addEventListener("click", function() {
+var x = document.getElementById("cvhoang");
+var y = document.getElementById("black_bg");
+    x.style.display = "block";
+    y.style.display = "block";
+    
+});
+    </script>
+     <script>
+        document.getElementById("buttonnga").addEventListener("click", function() {
+    var x = document.getElementById("cvnga");
+    var y = document.getElementById("black_bg");
+        x.style.display = "block";
+        y.style.display = "block";
+        
+    });
+    
+        </script>
+
+<script>
+    document.getElementById("anhnga").addEventListener("click", function() {
+var x = document.getElementById("cvnga");
+var y = document.getElementById("black_bg");
+    x.style.display = "block";
+    y.style.display = "block";
+    
+});
+    </script>
+
+<script>
+
+    document.getElementById("black_bg").addEventListener("click", function() {
+        var z1 = document.getElementById("cvnga");
+    var z2 = document.getElementById("cvhoang");
+    var z3 = document.getElementById("black_bg");
+        z1.style.display = "none";
+        z2.style.display = "none";
+        z3.style.display = "none";
+    
+});
+    
+    </script>
+
+<script>
+    const elements = document.getElementsByClassName("check");
+for (let i = 0; i < elements.length; i++) {
+  elements[i].addEventListener("click", function() {
+    alert("tính năng đang được cập nhật")
+  });
+}
+
+
+
     </script>
 </html>

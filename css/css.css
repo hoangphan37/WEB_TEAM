@@ -55,6 +55,12 @@ html {
     padding: 15px;
     text-decoration: none;
 }
+#nav>li>p{
+    color: white;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
 #nav .sub_thongtin{
     display: none;
     background-color: black;
@@ -77,6 +83,9 @@ html {
 }
 #nav li:hover {
     background-color: rgb(61, 51, 51);
+}
+#nav:hover{
+    cursor: pointer;
 }
 #logo{
     width: 54.55px;
@@ -144,7 +153,16 @@ html {
     color: black;
     background-image: linear-gradient(180,rgba(58, 204, 143,0.5),rgb(61, 135, 221,0.5));
 }
-
+.divanh{
+    overflow: hidden;
+    position: relative;
+}
+.anh{
+    transition: transform 0.3s ease; 
+}
+.anh:hover{
+    transform: scale(1.2); 
+}
 #content{
     margin: 30px 100px;
 
@@ -254,4 +272,60 @@ html {
     top: 135px;
     left: 125px;
     display: none;
+}
+
+
+
+
+
+/* cv  */
+
+.cv{
+    position: fixed;
+    z-index: 2;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+#black_bg{
+    display: none;
+}
+
+
+#futer{
+
+    margin: 200px 100px 0px 100px;
+    background-color: #282A35;
+    height: 200px;
+    border-radius: 10px;
+    color: #fff;
+    
+}
+#futer p{
+padding-left:30px;
+padding-top: 20px;
+}
+#icons{
+padding-left: 30px;
+padding-top: 30px;
+position: relative;
+}
+.iconapp{
+width: 35px;
+height: 35px;
+display: inline-block;
+position: relative;
+overflow: hidden;
+}
+.iconapp .icon{
+width: 35px;
+height: 35px;
+border-radius: 7px;
+width: 100%; /* Để đảm bảo ảnh điền vào phần container */
+height: 100%; /* Để đảm bảo ảnh điền vào phần container */
+transition: transform 0.3s ease;
+}
+.iconapp .icon:hover{
+    transform: scale(1.2);
 }
