@@ -6,11 +6,13 @@
 html {
     font-family: Verdana,sans-serif;
     scroll-behavior: smooth;
-    color: rgba(31, 36, 34, 0.5);
+    color: rgba(12, 12, 12, 1);
+    font-size: 18px;
     /* background-color:rgba(31, 36, 34, 0.5) ; */
 }
 #main{
     position: relative;
+    background: linear-gradient(to bottom, #e7f5e7, #7cdd89);
 }
 #header{
     background-color: black;
@@ -42,6 +44,9 @@ html {
     height: 20px;
     margin-right: 5px;
 
+}
+.co:hover{
+    border-radius: 5px;
 }
 #nav>li{
     display: inline-block;
@@ -291,6 +296,13 @@ html {
 #black_bg{
     display: none;
 }
+.img-cv{
+    width: 100%;
+}
+
+
+
+
 
 
 #futer{
