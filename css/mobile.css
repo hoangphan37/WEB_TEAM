@@ -9,16 +9,12 @@
         display: block;
         margin: auto;
         margin-top: 20px;
-        width: 8
-        0%;
+        width: 80%;
     }
     #content{
         margin: 15px 30px;
     
-    }
-
-        
-}
+    } 
     .anh{
         width: 70%;
     }
@@ -31,26 +27,11 @@
         
     }
 
-    
-.cv{
-   
-    top: 500px !important;
- 
-    transform: translate(-75%, -50%) !important;
-
-    
 }
-
-.img-cv{
-    width: 150% !important;
-    padding: 0px 20px;
-}
-
-
-@media (max-width: 600px){
+@media (max-width: 500px){
     .cv{
    
-        top: 270px !important;
+        top: 350px !important;
      
         transform: translate(-75%, -50%) !important;
     
@@ -70,7 +51,7 @@
 
 .cv{
    
-    top: 500px;
+    top: 550px ;
  
     transform: translate(-62%, -50%);
 

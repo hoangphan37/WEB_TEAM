@@ -289,9 +289,9 @@ html {
 .cv{
     position: fixed;
     z-index: 2;
-    top: 500px;
+    top: 700px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-65%, -50%);
     display: none;
     
 }
@@ -299,7 +299,7 @@ html {
     display: none;
 }
 .img-cv{
-    width: 100%;
+    width: 140%;
     padding: 0px 20px;
 }
 
