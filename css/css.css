@@ -310,9 +310,9 @@ html {
 /* futer  */
 #futer{
 
-    margin: 200px 100px 0px 100px;
+    margin: 200px 0px 0px 0px;
     background-color: #282A35;
-    height: 200px;
+    height: 180px;
     border-radius: 10px;
     color: #fff;
     
