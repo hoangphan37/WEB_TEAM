@@ -26,6 +26,12 @@
         height: 170px !important;
         
     }
+    #content{
+        margin-top: 80px !important;
+    }
+    #product{
+        margin-top: 100px !important;
+    }
 
 }
 @media (max-width: 500px){
