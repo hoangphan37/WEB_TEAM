@@ -49,6 +49,25 @@
 }
 }
 
+
+@media (max-width: 600px){
+    .cv{
+   
+        top: 270px !important;
+     
+        transform: translate(-75%, -50%) !important;
+    
+        
+    }
+    
+    .img-cv{
+        width: 150% !important;
+        padding: 0px 10px;
+    }
+}
+
+
+
 @media (max-width: 1200px) {
     #futer{
 
