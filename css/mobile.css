@@ -16,9 +16,7 @@
         margin: 15px 30px;
     
     }
-    #futer{
 
-        margin: 200px 0px;
         
 }
     .anh{
@@ -29,7 +27,7 @@
     }
     #futer{
  
-        height: 200px !important;
+        height: 170px !important;
         
     }
 
@@ -46,7 +44,6 @@
 .img-cv{
     width: 150% !important;
     padding: 0px 20px;
-}
 }
 
 
@@ -69,11 +66,7 @@
 
 
 @media (max-width: 1200px) {
-    #futer{
-
-        margin: 200px 0px 0px 00px;
-        
-}
+    
 
 .cv{
    
