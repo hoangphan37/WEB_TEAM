@@ -289,18 +289,19 @@ html {
 .cv{
     position: fixed;
     z-index: 2;
-    top: 700px;
+    top: 0;
     left: 50%;
-    transform: translate(-65%, -50%);
+    transform: translate(-45%, 60px);
     display: none;
+    width: 40%;
     
 }
 #black_bg{
     display: none;
 }
 .img-cv{
-    width: 140%;
-    padding: 0px 20px;
+    width: 90%;
+    padding: 0px 10px;
 }
 
 
