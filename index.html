@@ -20,7 +20,7 @@
             </div>
             <div id="ti-menu"><i class="ti-menu"></i></div>
             <ul id="nav">
-                <li><a class="check" href="">Home</a></li>
+                <li><a  href="">Home</a></li>
                 <li><p >Thông Tin</p>
                     <ul class="sub_thongtin">
                         <li><a class="check">Chung</a></li>
@@ -126,8 +126,8 @@
                 <li id="mini-li1"><p>Thông Tin</p>
                     <ul class="sub_thongtin-m" id="sub_thongtin-m1">
                         <li><a class="check">Chung</a></li>
-                        <li><a href="#">Hoàng</a></li>
-                        <li><a href="">Nga</a></li>
+                        <li id="buttonhoang2"><a >Hoàng</a></li>
+                        <li id="buttonnga2"><a>Nga</a></li>
                     </ul></li>
                 <li id="mini-li2"><p>Sản Phẩm</p>
                     <ul class="sub_thongtin-m" id="sub_thongtin-m2">
@@ -268,7 +268,18 @@ var y = document.getElementById("black_bg");
     y.style.display = "block";
     
 });
+
     </script>
+    <script>
+        document.getElementById("buttonhoang2").addEventListener("click", function() {
+    var x = document.getElementById("cvhoang");
+    var y = document.getElementById("black_bg");
+        x.style.display = "block";
+        y.style.display = "block";
+        
+    });
+    
+        </script>
     <script>
     document.getElementById("anhoang").addEventListener("click", function() {
 var x = document.getElementById("cvhoang");
@@ -288,6 +299,17 @@ var y = document.getElementById("black_bg");
     });
     
         </script>
+            </script>
+            <script>
+               document.getElementById("buttonnga2").addEventListener("click", function() {
+           var x = document.getElementById("cvnga");
+           var y = document.getElementById("black_bg");
+               x.style.display = "block";
+               y.style.display = "block";
+               
+           });
+           
+               </script>
 
 <script>
     document.getElementById("anhnga").addEventListener("click", function() {

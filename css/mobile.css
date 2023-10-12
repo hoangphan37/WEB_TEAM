@@ -27,12 +27,46 @@
     .list{
         width: 70%;
     }
+    #futer{
+
+        height: 250px;
+        
+    }
+
+    
+.cv{
+   
+    top: 500px !important;
+ 
+    transform: translate(-75%, -50%) !important;
+
+    
+}
+
+.img-cv{
+    width: 150% !important;
+    padding: 0px 20px;
+}
 }
 
 @media (max-width: 1200px) {
     #futer{
 
-        margin: 200px 30px;
+        margin: 200px 30px 0px 30px;
         
+}
+
+.cv{
+   
+    top: 500px;
+ 
+    transform: translate(-62%, -50%);
+
+    
+}
+
+.img-cv{
+    width: 125%;
+    
 }
 }

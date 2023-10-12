@@ -292,19 +292,21 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
+    
 }
 #black_bg{
     display: none;
 }
 .img-cv{
     width: 100%;
+    padding: 0px 20px;
 }
 
 
 
 
 
-
+/* futer  */
 #futer{
 
     margin: 200px 100px 0px 100px;
