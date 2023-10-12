@@ -11,7 +11,7 @@
     width: 100%;
     z-index: 1;
     border-radius: 20px;
-    background: linear-gradient(to bottom,rgba(255, 247, 247, 0),rgba(153, 243, 150,0.5),rgb(156, 223, 153));
+    background: linear-gradient(to bottom,rgba(255, 247, 247, 0),rgba(173, 235, 171, 0.5),rgb(162, 236, 160));
    }
   .show-hide-text2>a {
     order: 2;
